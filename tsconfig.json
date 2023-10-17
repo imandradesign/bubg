@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "outDir": "./dist",
+    "outDir": "js",
   },
   "vueCompilerOptions": {
     "target": 2.7,
