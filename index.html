@@ -7,34 +7,32 @@
     <title>BUBG</title>
   </head>
   <body>
-    <div class="container">
-        <div class="jumbotron" id="intro">
-          <h3>BUBG</h3>
+    <div class="container text-center">
+      <div class="jumbotron" id="intro">
+        <h3>BUBG</h3>
+        <hr>
+        <h5>Rules:</h5>
+        <ul>
+          <li>This isn't fair.</li>
+          <li>Last player standing wins.</li>
+          <li>Each map loss is a strike against the individual players on the losing team.</li>
+          <li>2 strikes and you're out.</li>
+          <li>Teams will be uneven, especially as the tournament progresses. They will be split as evenly as possible across remaining players.</li>
+        </ul>
+      </div>
+    </div>
+      <button id="fetch-button">Fetch Player Names</button>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Player List</h3>
           <hr>
-          <h5>Rules:</h5>
-          <ul>
-            <li>This isn't fair.</li>
-            <li>Last player standing wins.</li>
-            <li>Each map loss is a strike against the individual players on the losing team.</li>
-            <li>2 strikes and you're out.</li>
-            <li>Teams will be uneven, especially as the tournament progresses. They will be split as evenly as possible across remaining players.</li>
-          </ul>
+          <h5><span id="player-list"></span></h5>
+        </div>
+        <div class="col-md-4">
+          <h3>Strikes</h3>
+          <hr>
+          <h5><span id="player-strikes"></span></h5>
         </div>
       </div>
-      <button id="fetch-button">Fetch Player Names</button>
-      <table class="players">
-          <tr>
-              <td>
-                  <h3>Player List</h3>
-                  <hr>
-                  <h5><ol id="player-list"></ol></h5>
-              </td>
-              <td>
-                  <h3>Strikes</h3>
-                  <hr>
-                  <h5><ol id="player-strikes"></ol></h5>
-              </td>
-          </tr>
-      </table>
     <script src="js/scripts.js"></script>
   </body>
