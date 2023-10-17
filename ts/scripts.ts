@@ -23,6 +23,7 @@ async function fetchPlayerNames(): Promise<void> {
     allPlayers.forEach((player) => {
       var newPlayer = new Player();
       newPlayer.name = player;
+      console.log("New player: ", player);
 
       const playerListElement = document.getElementById("player-list");
       const nameItem = document.createElement("li");
@@ -30,11 +31,12 @@ async function fetchPlayerNames(): Promise<void> {
       nameItem.textContent = newPlayer.name;
 
       if (playerListElement) {
+        console.log("player-list ID exists.");
         playerListElement.appendChild(nameItem);
       }
     });
   } catch (error) {
-    console.error("An error occurred:", error);
+    console.log("An error occurred:", error);
   }
 }
 
@@ -42,4 +44,5 @@ async function fetchPlayerNames(): Promise<void> {
 const fetchButton = document.getElementById("fetch-button");
 if (fetchButton) {
   fetchButton.addEventListener("click", fetchPlayerNames);
+  console.log("Button Clicked.");
 }
