@@ -1,10 +1,29 @@
 #intro {
-    background: #000 url("../img/hex_banner.png") top center no-repeat;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-  
-  #intro h3 {
-    text-align: center;
-  }
+background: #000 url("../img/hex_banner.png") top center no-repeat;
+color: white;
+padding-top: 10px;
+padding-bottom: 20px;
+}
+
+#intro h3 {
+text-align: center;
+}
+
+body {
+background-color: #3a21db;
+}
+
+#fetch-button {
+margin-right: 10px;
+background-color: #17587E;
+color: white;
+}
+
+.row {
+height: 120px;
+}
+
+.text-head {
+display: block;
+text-align: center;
+}
