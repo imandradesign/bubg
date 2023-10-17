@@ -1,0 +1,10 @@
+#intro {
+    background: #000 url("../img/hex_banner.png") top center no-repeat;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  #intro h3 {
+    text-align: center;
+  }
